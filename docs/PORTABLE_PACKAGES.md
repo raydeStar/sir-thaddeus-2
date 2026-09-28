@@ -5,6 +5,54 @@ the study requires no SDK, Node, Docker account or GPU. Your model connection an
 a supported isolated worker are separate setup choices. These are unsigned
 development archives, not consumer installers or qualified worker releases.
 
+## Windows first run
+
+1. Extract the whole Windows x64 ZIP to a new folder. Keep its files together.
+   Open **Start Thaddeus.cmd** from File Explorer or a normal Windows Terminal.
+   The default browser opens the local study and signs in with a single-use link.
+   If Windows blocks the unsigned download, stop and report that result; this
+   preview does not establish a trusted publisher or ask you to bypass protection.
+2. The default scripted provider is a fictional demonstration, not live AI.
+   In **Settings → Connect a model**, supply your compatible endpoint, model and
+   authentication choice. The developer's Luna bridge, subscription login and
+   model credentials are not bundled. A localhost endpoint must actually be
+   running on this computer. Use the model guide included in this folder.
+3. Try a harmless task, inspect its exact review, approve or deny it, then inspect
+   the saved result. Close and reopen the browser to check retained history.
+   Leave the host running and the computer awake for scheduled work. The tray's
+   **Open Thaddeus** returns to the study; **Exit Thaddeus** stops its host.
+4. Google is optional and currently a developer/test-user connection. Ask Chat
+   to connect Gmail or Calendar, then follow the connection card. An unconfigured
+   installation first needs a registered Desktop OAuth app imported through its
+   secure app-setup form. No production Google app identity is bundled. The owner's
+   successful connection does not give other users access; test-audience admission
+   and public verification are separate. See **CONNECTED_TOOLS.md**.
+
+The default study is `%LOCALAPPDATA%\Thaddeus2`, outside this application folder.
+Use **Settings → Maintenance** to back it up before changing app versions. Do not
+copy another person's study or host access key to configure a new computer.
+An isolated data folder on the developer's account is not fresh-Windows-user
+acceptance; the latter must still be performed on the release candidate.
+
+### Data sent to connected services
+
+Saved conversation, notes, apps, schedules and results live in the local study.
+When you use a connected model, its provider receives the conversation context
+and selected material needed for that task. Approved connector results can also
+become model input: a mail brief or inbox assessment can send selected message
+information to your chosen model provider. Local storage does not mean all task
+processing stays on this computer. Review that provider's terms and data handling
+before using private material.
+
+Provider keys and Google refresh credentials stay in the host's credential
+boundary and are not included in chat, model prompts or study exports. Backups,
+saved results and diagnostic receipts can still contain personal task content;
+review them before sharing. Disconnect access through Settings and, when needed,
+revoke it at the provider. This describes the current preview; it is not a
+published privacy policy or a security audit.
+
+## Package operation
+
 For Windows desktop use, open the launcher from File Explorer or a normal Windows
 terminal. An MSIX development app's child processes can inherit private registry
 and AppData redirection: notification registration can then appear successful
