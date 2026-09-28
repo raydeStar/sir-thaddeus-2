@@ -5,8 +5,6 @@ exact prerelease for owner review, but no public repository, page deployment,
 contest submission or scheduled delivery has been created. Product acceptance is
 also open; see `MVP_DELEGATION_ACCEPTANCE.md`.
 
-## September 22 status
-
 ## September 27 go-public check — downloadable Windows preview
 
 **LOCAL CHECKS PASS; PUBLIC LAUNCH AND PRODUCT ACCEPTANCE REMAIN OPEN.** The owner
@@ -41,6 +39,13 @@ The live private `v0.1.0-preview` asset is still the September 19 baseline:
 `ff7f458b5f93bb8d6c32f1facd6c51568f9191c0ebe619111545dec9e5355c78`,
 release target `bf67d4e`. It is not G; its historical release document was corrected
 to those actual asset values. No release asset was replaced during this audit.
+
+The separate final attempt to remove the local core-check projects' `bin`/`obj`
+outputs was rejected by automatic approval review (`blocked by policy`); that
+command never executed, and no alternate removal route was attempted. Those
+outputs remain. `artifacts/public-readiness-20260927/core-build-cleanup.json`
+records the exact project scope. Successful package/fixture cleanup above is
+separate from this blocked local build-output cleanup.
 
 ### Gates before accepting and publishing
 
@@ -171,7 +176,7 @@ and thumbnail are unchanged reviewed fictional September 16 assets; their hashes
 and source revision are retained. They are not live Google or this candidate's
 acceptance evidence. A short demo remains optional and unrecorded.
 
-## Disclosures and owner gates
+## Historical disclosures and owner gates (superseded September 27)
 
 The ZIP includes the host, .NET runtime, browser UI, pinned Node/MCP browser
 adapter and dependency notices. Chrome must be installed separately.
