@@ -1,4 +1,25 @@
-# Development status — 2026-09-22
+# Development status — 2026-09-27
+
+Candidate G is locally verified at
+`artifacts/portable-windows-preview-20260927-r1/thaddeus-win-x64`, clean source
+`8d4cf050d254c93a3cf42daba1dead1fe6b2b507`, schema 12, unsigned Windows x64.
+The core check passed 1,160 backend tests (one opt-in skip), 32 protocol checks
+and the production web build. The package passed 17 native, five credential-store
+and three browser checks with disposable data. Two runtime/UI files differ from
+F: the spent-budget Chrome recovery guard/card. Prior unchanged evidence is reused.
+Owner data, F and E were preserved; G was not activated on the owner study.
+No owner host/model bridge was listening on 5279/5379/5181 at inspection; historical
+"running" claims below describe their recorded checkpoints, not today's state.
+
+The owner chose a downloadable Windows preview. Local checks do not close fresh
+Windows-user setup, live Google revocation/reconnect, live Chrome continuation
+or final human notification delivery/cold click. Public Google app enablement,
+download hosting, publisher trust and privacy/usage/support disclosures also
+remain open. See [current release handoff](PUBLICATION_HANDOFF.md) for exact
+hashes, evidence and next action. Publication remains paused; no new feature or
+architecture cycle was started.
+
+## Historical September 22 checkpoint
 
 Current running candidate F is
 `artifacts/portable-portable-inbox-bound-20260922-f/thaddeus-win-x64`, PID 2056,

@@ -1,5 +1,13 @@
 # Astra notification handoff
 
+September 27: candidate G is now locally checked; use the exact identity in
+`PUBLICATION_HANDOFF.md`. Its notification sources match F, and no toast probe,
+registration change or Windows setting change was made. Final visual/cold-click
+acceptance remains open and last in sequence. The separate fictional-study
+`artifacts/public-readiness-20260927/Start-Acceptance.cmd` is prepared for a normal
+desktop launch. An agent launch cannot provide human delivery evidence. Historical
+notification receipts below are preserved; no fix or ownership was overwritten.
+
 September 22 acceptance sequence: the owner asked to finish non-notification
 manual checks first. The current running package is
 `portable-portable-inbox-bound-20260922-f`, launched from Codex after a verified

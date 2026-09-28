@@ -1,5 +1,13 @@
 # MVP finish line
 
+September 27: candidate G has passed the bounded local release checks. The current
+finish line and exact evidence are in [MVP_DELEGATION_ACCEPTANCE.md](MVP_DELEGATION_ACCEPTANCE.md)
+and [PUBLICATION_HANDOFF.md](PUBLICATION_HANDOFF.md). Fresh Windows-user setup,
+Google revoke/reconnect, live Chrome continuation or accepted limitation, and
+final human notification/cold-click acceptance remain open. Public availability
+and product acceptance are separate; publication remains paused. The earlier
+milestone list below is historical, not the current package identity.
+
 Scope updated from the owner's 2026-09-14 instruction: finish the usable product;
 stop broad benchmark and sandbox qualification loops.
 

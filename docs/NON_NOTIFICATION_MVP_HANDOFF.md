@@ -1,6 +1,43 @@
 # MVP release handoff
 
-## September 23 release-prep checkpoint
+## September 27 Windows preview candidate G
+
+Local verification passes; product acceptance and public publication remain open.
+The owner selected a downloadable Windows preview first. Candidate G is
+`artifacts/portable-windows-preview-20260927-r1/thaddeus-win-x64`, source
+`8d4cf050d254c93a3cf42daba1dead1fe6b2b507` (clean), schema 12, unsigned Windows x64.
+Archive SHA256:
+`532e8f5d16bbdc5bd5427f1d7b42f6b984bbbf9d7513200574f875a298127cd6`.
+The [current publication handoff](PUBLICATION_HANDOFF.md#september-27-go-public-check--downloadable-windows-preview)
+records the full manifest/checksum, exact evidence and release gates.
+
+The stock **Start Thaddeus.cmd** opens the default local study. For a separate
+fictional acceptance study on this workstation, use
+`artifacts/public-readiness-20260927/Start-Acceptance.cmd` (localhost:5479).
+Neither owner nor presentation host was listening at 5279/5379 during this audit;
+the unrelated marketing host was left alone. Existing owner data/backups, F and
+E remain preserved. G has not been activated on the owner study.
+
+Core: 1,160 backend passes, one opt-in skip, 32 protocol passes and frontend build.
+G: 17 extracted-package, five native credential and three packaged browser checks.
+The bounded inventory/text audit verified 935 files and found no matching secret
+or owner markers in 221 text files. Only `RuntimeBrowser.cs` and
+`BrowserTaskCard.tsx` differ from F after normalizing line endings; the current
+package includes the previously source-only spent-budget recovery explanation.
+The unchanged scheduler, Google integration and notifications reuse their prior
+scoped evidence. No live model, Google call, worker, toast or public upload was
+performed. Fixture data and build staging were cleaned after owned process exit.
+
+Still open: fresh Windows user/setup and separate clean-machine prerequisites;
+authorized Google revocation/reconnect; successful live Chrome continuation or
+explicit acceptance of its budget limitation; final normal-desktop visible
+notification/cold click. Public Google enablement, download destination,
+publisher trust, usage terms and privacy/support disclosures remain separate
+distribution gates. **Next: test G under a fresh Windows account with that test
+user's model connection.** Freeze only after agreed acceptance; publication stays
+paused. All checkpoints below retain their historical candidate and scope.
+
+## Historical September 23 release-prep checkpoint
 
 The owner-study candidate is still F below; no new package has replaced it.
 Its ZIP and manifest SHA-256 were rechecked and still match this ledger. A

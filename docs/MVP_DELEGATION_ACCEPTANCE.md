@@ -1,5 +1,35 @@
 # Windows delegation MVP acceptance
 
+## September 27 release check
+
+Candidate G is `artifacts/portable-windows-preview-20260927-r1/thaddeus-win-x64`,
+clean source `8d4cf050d254c93a3cf42daba1dead1fe6b2b507`, schema 12. Exact checksum,
+launch command and evidence are in [PUBLICATION_HANDOFF.md](PUBLICATION_HANDOFF.md).
+Core passes 1,160 backend tests (one opt-in browser fixture skipped), 32 protocol
+checks and the web build. G passes 17 native package checks, five native credential
+checks and three packaged browser flows. Those flows cover launcher authentication,
+exact review/saved results, and synthetic Chrome controls including refusal after
+unknown usage exhausts the budget. Screenshots and compact receipts are retained;
+fixture studies/build staging were removed after owned process exit.
+
+The normalized source comparison in
+`artifacts/public-readiness-20260927/package-audit.json` identifies only
+`RuntimeBrowser.cs` and `BrowserTaskCard.tsx` as changed from F. G packages the
+September 23 recovery fix. The G1/G2/G4/G5/G6 and C1-C3/C5-C8 evidence below is
+reused for unchanged behavior with its original fixture/live limits. No new live
+Google, model or human notification pass is claimed. No owner host was listening
+at 5279 during this check; historical active-process assertions below retain
+their original dates. Owner data/backups and F/E were preserved.
+
+**G3, C4, R2 and R3 remain open:** current-candidate normal-desktop visible
+notification and cold click; Google-side revoke/reconnect on an authorized test
+account; actual fresh Windows-user model/setup/persistence/schedule acceptance;
+and successful live Chrome continuation or explicit acceptance of its limit.
+G's synthetic recovery check is not successful live continuation. The owner chose
+a downloadable Windows preview first; public Google availability and distribution
+trust/policy/hosting are separate open gates. Publication remains paused. Do not
+call the whole MVP accepted or freeze it while these agreed observations are open.
+
 ## September 22 bounded live Chrome check on F
 
 Through ordinary Chat, a read-only Chrome task was reviewed for only
@@ -688,9 +718,12 @@ never retried automatically.
 | C8 Visible and controllable work | PASS | Log -> Upcoming shows action, recurrence/timezone, host state, pause state, result, unread state, and versioned controls. Human-readable review cards keep canonical JSON behind disclosure. Desktop and mobile packaged cases passed. | None for the packaged UI contract. |
 | R1 Preserve existing MVP | PASS | All 54 ordinary packaged R3 workflows passed (preview-browser-suite-20260922-r9/suite.json), including inline exact approval and removable remembered choices, Chat, apps, artifacts, notes, To-do, Ideas, Feed, uploads, search, settings, history, backup/restore, token UI, MCP connection UI, and responsive navigation. | Opt-in live/native workflows remain separately scoped. |
 | R2 Clean-user Windows path | OWNER ACTION | The current candidate is an unsigned portable development package. It does not bundle a continuously running OpenClaw gateway or preconfigure mail/calendar credentials. | Verify setup from a fresh Windows user profile with owner-authorized test connectors. |
-| R3 Freeze and handoff | OWNER ACTION | F's exact source/checksum, focused and packaged receipts, controlled live Gmail/Calendar/watch receipts, bounded Chrome result, unpublished publication handoff, and E rollback are recorded in NON_NOTIFICATION_MVP_HANDOFF.md. | Publication stays paused. Google-side revocation/reconnect, fresh Windows user, final normal-desktop scheduled/click notification acceptance, and a successful Chrome continuation after Pause/Take over/Resume remain open. |
+| R3 Freeze and handoff | OWNER ACTION | G's clean source/checksum, current native/credential/browser checks and comparison with F are in PUBLICATION_HANDOFF.md. Prior controlled live Gmail/Calendar/watch and bounded Chrome evidence is reused for unchanged behavior; owner data and F/E are preserved. | Publication stays paused. Google-side revocation/reconnect, fresh Windows user, final normal-desktop scheduled/cold-click notification acceptance, and successful Chrome continuation or explicit acceptance of its limit remain open. |
 
 ### September 23 Chrome interruption recovery candidate
+
+Historical source-only checkpoint, superseded by G's September 27 package and
+focused browser checks above. Successful live continuation remains open.
 
 The source now refuses **Resume AI** before dispatch when a paused Chrome task's
 aggregate token allowance is already spent. The in-chat Chrome card hides the
@@ -703,6 +736,10 @@ successful same-task live continuation is still open; this recovery explains and
 contains the failure rather than proving that continuation.
 
 ## External state still required
+
+The September 27 checklist above supersedes candidate/running-state references
+in this historical external-state inventory. Its outstanding acceptance gates
+remain separate from local checks.
 
 1. `portable-portable-inbox-bound-20260922-f` is active. Controlled live
    delayed email, independent Inbox observation, bounded Gmail/Calendar brief,

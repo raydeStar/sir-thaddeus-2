@@ -7,6 +7,93 @@ also open; see `MVP_DELEGATION_ACCEPTANCE.md`.
 
 ## September 22 status
 
+## September 27 go-public check — downloadable Windows preview
+
+**LOCAL CHECKS PASS; PUBLIC LAUNCH AND PRODUCT ACCEPTANCE REMAIN OPEN.** The owner
+selected a downloadable Windows preview first. Source stays private; no website,
+public repository, release asset or listing was published. The optional worker and
+Organization cockpit branch are outside this host-only candidate.
+
+Candidate **G**: `artifacts/portable-windows-preview-20260927-r1/thaddeus-win-x64`.
+Source `8d4cf050d254c93a3cf42daba1dead1fe6b2b507`, clean captured checkout, schema 12,
+Windows x64, unsigned portable preview. Archive `thaddeus-win-x64.zip` is
+141,703,439 bytes; SHA256:
+`532e8f5d16bbdc5bd5427f1d7b42f6b984bbbf9d7513200574f875a298127cd6`.
+Manifest SHA256:
+`a21d5fc71df8e50e267ee5b79ef6090f6adbfeecce310a9d7fa071e9b662c436`.
+Launch the extracted **Start Thaddeus.cmd** from the normal Windows desktop.
+Opening it uses `%LOCALAPPDATA%\Thaddeus2`; use the separate manual acceptance
+launcher described below to avoid changing an existing study.
+
+| Check | Evidence and limit |
+|---|---|
+| Source core | `artifacts/local-check-public-readiness-20260927-r1/verified.json`: 1,160 backend passes, one opt-in browser adapter skip, 32 protocol passes, locked restore and production web build. Source `7b3dda5`; the next commit changes only the packaged setup guide. No live model, GPU, worker or hosted Actions. |
+| Native package | `artifacts/portable-check-public-readiness-20260927-r1/verified.json`: 17 passes on Windows 11 Pro 10.0.26200/x64, actual extracted host, login, model metadata/credential persistence, restart, backup/restore, launcher and port ownership. Same Windows account with disposable data; not a fresh Windows user or clean machine. |
+| Credential custody | `artifacts/credentials-public-readiness-20260927-r1/verified.json`: five native store/helper checks; fictional credential entries removed. |
+| Packaged browser | `artifacts/browser-public-readiness-20260927-r1/verified.json`: three passes for one-use login/reload, exact approval/editable saved result/receipts, and Chrome controls including spent-budget refusal. Desktop and 390-pixel screenshots inspected. Chrome card responses are synthetic, not live continuation acceptance. |
+| Inventory and exposure | `artifacts/public-readiness-20260927/package-audit.json`: 935 payload hashes verified, 221 text files checked, no matching credential/owner-marker findings. Bounded patterns, not an exhaustive binary scan or security audit. |
+| Evidence reuse | That audit normalizes line endings and compares 220 runtime/UI inputs with F. Only `RuntimeBrowser.cs` and `BrowserTaskCard.tsx` change. F/E's controlled Google send/read/brief/watch evidence and unchanged scheduler/notification evidence retain their original limits; no fresh live claim. |
+| Dependency advisories | September 27 web and pinned browser-runtime npm audits reported zero vulnerabilities; solution NuGet transitive audit reported none. Point-in-time advisory checks, not platform/runtime or security certification. |
+| Cleanup | Publisher `scratch-cleanup.json`, native `scratch-cleanup.json`, and `artifacts/public-readiness-20260927/cleanup.json` retain manifests, logs and screenshots while removing staging dependencies/build output, extraction and fictional studies after owned processes exit. Owner data, F and E are preserved. |
+
+The live private `v0.1.0-preview` asset is still the September 19 baseline:
+102,404,371 bytes, SHA256
+`ff7f458b5f93bb8d6c32f1facd6c51568f9191c0ebe619111545dec9e5355c78`,
+release target `bf67d4e`. It is not G; its historical release document was corrected
+to those actual asset values. No release asset was replaced during this audit.
+
+### Gates before accepting and publishing
+
+1. Test G from an actual fresh Windows user: normal launch, configure that user's
+   model, useful task, retained history, close/reopen and scheduled dispatch. The
+   developer Luna bridge/login is not bundled; a user needs a working provider.
+   Separate clean-machine prerequisite qualification from a fresh account.
+2. Perform Google-side revoke/reconnect on an explicitly authorized test
+   account/connection. Do not revoke the owner's normal connection for a probe.
+3. Complete one successful live Chrome continuation after Pause/Take over/Resume,
+   or obtain explicit owner acceptance of its recorded interrupted-budget limit.
+   G explains and refuses a spent budget; it does not prove live continuation.
+4. LAST: normal-desktop notification delivery with browser closed, then click
+   after the helper exits. Preserve Astra's diagnostics; no probes or registration
+   changes were made in this pass.
+5. Settle the public distribution destination, original-code binary usage terms,
+   support/security contact and published data-handling/privacy disclosure. The
+   current private repository's release link cannot serve anonymous downloaders.
+   Publisher signing/SmartScreen trust is absent; decide explicitly whether this
+   unsigned technical preview is acceptable rather than calling it consumer-ready.
+
+### Google public availability is a separate blocker
+
+The existing dedicated project is an owner test setup, not a bundled production
+app identity. Gmail read uses restricted `gmail.readonly`; sending uses sensitive
+`gmail.send`. Public access requires the applicable Google verification. A
+Testing audience is limited to configured users and these authorizations/refresh
+tokens expire after seven days. Selected connector content can reach the chosen
+model provider; review this actual data flow when establishing Google's required
+disclosures and any applicable assessment. Do not assume local token custody
+exempts transmitted mail data from those requirements.
+Current official sources checked September 27:
+[Gmail scopes](https://developers.google.com/workspace/gmail/api/auth/scopes),
+[app audience](https://support.google.com/cloud/answer/15549945?hl=en), and
+[OAuth policy](https://developers.google.com/identity/protocols/oauth2/policies).
+Until enabled, Google must remain explicitly limited to developer/test-user setup;
+do not advertise one-click Google connection for every downloader.
+
+Manual fixture launcher:
+`artifacts/public-readiness-20260927/Start-Acceptance.cmd` opens G with a separate
+fictional study at localhost:5479. It is for this workstation's acceptance and is
+not the public package entry point or fresh-user evidence. Use the stock package
+launcher under the new Windows account for the fresh-user check. Release notes and
+checksums are prepared locally beside this launcher; neither is public.
+
+**Exact next action:** perform G's fresh Windows-user setup check using its stock
+launcher and a test-user model connection. Complete remaining live/human gates,
+record product acceptance and freeze this exact archive; only then choose and
+approve the public download/policy destination. Source check-in is separate from
+public publication. No architecture or feature expansion is needed for this pass.
+
+## Historical September 22 status
+
 The running candidate is now `portable-portable-inbox-bound-20260922-f`,
 source HEAD `bf67d4e3c465c432c7264debe5f4f9a984b8a688` plus captured dirty
 changes, ZIP SHA256

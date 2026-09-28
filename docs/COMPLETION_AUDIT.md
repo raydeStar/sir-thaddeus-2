@@ -1,5 +1,11 @@
 # Remaining-work completion audit
 
+Historical early-slice audit. Scheduling and Google OAuth were subsequently
+implemented; the deferred statements and test totals below describe that older
+milestone. Use [the current MVP acceptance ledger](MVP_DELEGATION_ACCEPTANCE.md)
+and [publication handoff](PUBLICATION_HANDOFF.md) for the September 27 candidate
+and unresolved product/setup/publication gates.
+
 Goal: complete the development backlog agreed in this task, preserving the original
 private/local-first scope and all security and evidence boundaries. A green narrow
 test does not close a broader requirement.

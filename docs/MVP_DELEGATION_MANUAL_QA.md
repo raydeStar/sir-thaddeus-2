@@ -1,5 +1,46 @@
 # Delegation MVP manual QA
 
+## September 27 remaining acceptance on G
+
+Use candidate G identified in `PUBLICATION_HANDOFF.md`; prior sections below
+describe their historical packages. G is locally verified, unsigned and not
+activated on the owner study. No owner host was listening on 5279 during the
+September 27 audit. Preserve the existing data and F/E rollback pair.
+
+1. **Fresh Windows user:** extract G's exact ZIP under a separate Windows account
+   and open **Start Thaddeus.cmd** normally. Confirm browser login, configure that
+   user's actual model connection, perform a harmless useful task, inspect its
+   exact review and saved result, close/reopen and check retained history. Approve
+   one short scheduled action, close the browser and leave the host awake; inspect
+   one occurrence/result afterward. Record OS/account/package and observed IDs.
+   Same-account fictional-data checks already pass but cannot replace this test;
+   a clean machine's dependencies must be assessed separately.
+2. **Google recovery:** use a separately authorized test account/connector, sign
+   in through the Google connection card, perform a bounded approved read, revoke
+   access through Google, and verify that another scheduled read stops visibly.
+   Reconnect through the normal card and re-review the invalidated task authority.
+   Do not revoke or export the owner's normal credentials. Google Testing access
+   and its seven-day expiration are separate from public app verification.
+3. **Chrome continuation:** on a bounded public-page read with sufficient reviewed
+   allowance, Pause, Take over, Resume and finish with a real saved page result.
+   G must refuse Resume if interrupted/unknown usage has exhausted the allowance;
+   closing and reviewing a new task is the recorded recovery. A successful live
+   continuation or explicit owner acceptance of this limit remains required.
+4. **Notifications LAST:** from a normal Windows desktop, launch G, request one
+   harmless immediate/scheduled notification in Chat, approve the exact card,
+   close the browser and observe it in Notification Center. Wait until the sending
+   helper has exited, then click and inspect the retained result. API/helper
+   acceptance is not a human observation. Reuse Astra's prior diagnostics.
+
+For a separate fictional study on this workstation only, the prepared
+`artifacts/public-readiness-20260927/Start-Acceptance.cmd` uses G and localhost:5479.
+It does not copy the owner study, credentials or model setup. Use G's stock
+launcher under the new Windows account for item 1. Public download hosting,
+privacy/usage/support disclosure, publisher trust and Google public enablement
+remain separate in `PUBLICATION_HANDOFF.md`. Publication stays paused.
+
+## Historical acceptance instructions
+
 Use the current candidate identified in `NON_NOTIFICATION_MVP_HANDOFF.md`,
 launched from File Explorer or a normal Windows desktop terminal. Codex's MSIX
 process environment redirected earlier notification registrations into its private

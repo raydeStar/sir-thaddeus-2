@@ -29,12 +29,16 @@ audits do not certify the current Windows preview.
 
 ## Current Windows preview
 
-On the owner's workstation, the active, verified candidate is package **F** at
-`artifacts/portable-portable-inbox-bound-20260922-f/thaddeus-win-x64`, running at
-`http://localhost:5279`. Its guarded normal-desktop launch command is
-`artifacts/preview-inbox-bound-20260922/Start-Preview.cmd`; package E is retained
-for rollback. These `artifacts/` paths are local acceptance files, not files in
-the Git checkout or the older GitHub prerelease. See the
+The September 27 local release candidate is **G**, an unsigned Windows x64
+portable preview at `artifacts/portable-windows-preview-20260927-r1/thaddeus-win-x64`.
+Its stock launcher is **Start Thaddeus.cmd**; it opens the default study at
+`%LOCALAPPDATA%\Thaddeus2`. Its exact source, checksum, checks and release gates are
+in the [publication handoff](docs/PUBLICATION_HANDOFF.md). The separate local
+`artifacts/public-readiness-20260927/Start-Acceptance.cmd` opens a fictional study
+at `http://localhost:5479`, preserving existing data. F and E remain preserved;
+no owner host was listening at localhost:5279 during the September 27 audit.
+These `artifacts/` paths are local acceptance files, not files in the Git checkout
+or the older GitHub prerelease. See the
 [exact candidate and acceptance ledger](docs/NON_NOTIFICATION_MVP_HANDOFF.md) and
 [presentation walkthrough](docs/PRESENTATION_WALKTHROUGH.md) before demonstrating.
 Publication is paused. Fresh-user setup, a Google revocation/reconnect check,
