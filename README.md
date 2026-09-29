@@ -7,7 +7,9 @@ tasks; the ordinary chat and schedule host runs locally.
 ASP.NET Core 10, React/TypeScript, SQLite, and ordinary Markdown. Original temporary
 pixel raven; no GPU, account key, or model download required for the scripted demo.
 
-![Actual desktop prototype, fictional demo data](docs/media/home.png)
+![Chat and My page in the dark theme, scripted demo](docs/media/home.png)
+
+![The same screen in the light theme](docs/media/home-light.png)
 
 **Preview, not production-ready or security-audited.** The source quickstart uses
 an explicitly simulated provider until you connect a model. The owner's current

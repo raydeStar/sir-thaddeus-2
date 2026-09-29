@@ -76,3 +76,14 @@ h1 em { font-style: normal; font-weight: 600; }
 .study-shell .composer:focus-within { background: var(--composer); border-color: var(--line-3); box-shadow: none; }
 .study-shell .composer .send-message { background: var(--fg); color: var(--bg); box-shadow: none; }
 .study-shell .composer .send-message:disabled { background: transparent; color: var(--fg-4); }
+
+/* Headings that name Georgia directly rather than the serif token */
+.today-heading h2, .app-card h2, .apps-empty h2, .app-title h2, .app-summary > strong {
+  font-family: var(--font-sans); font-weight: 600;
+}
+.today-heading h2 { font-size: 24px; }
+.app-card h2 { font-size: 18px; }
+.apps-empty h2 { font-size: 22px; }
+.app-title h2 { font-size: 26px; }
+.app-summary > strong { font-size: 26px; font-weight: 500; }
+.app-summary > strong small { font-weight: 400; }
