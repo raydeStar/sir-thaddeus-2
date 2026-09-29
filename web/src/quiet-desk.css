@@ -1,0 +1,78 @@
+/* Quiet desk: the neutral, sans-serif look carried over from the marketing project (business-theme.css).
+   Loaded last. It re-points the palette tokens (the brass accent becomes a neutral ink) and flattens the
+   primitives; the layout in workspace.css is left alone. */
+
+:root {
+  --font-serif: var(--font-sans);
+
+  --bg:#191919; --bg-deep:#141414; --surface:#202020;
+  --surface-2:#272727; --surface-3:#323232; --surface-hover:#393939;
+  --line:#2b2b2b; --line-2:#363636; --line-3:#525252;
+  --fg:#eeeeee; --fg-2:#d5d5d5; --fg-3:#aaa; --fg-4:#929292;
+
+  /* The accent tokens keep their names so every existing rule follows the new palette. */
+  --gold:#c8c8c8; --gold-bright:#eee; --gold-ink:#1b1b1b;
+  --gold-soft:#ffffff09; --gold-line:#ffffff25; --gold-glow:transparent;
+  --link:#b1c8ec; --link-hover:#d1e0f7;
+  --green:#8bc8ac; --green-soft:#8bc8ac12; --green-line:#8bc8ac45;
+  --amber:#e6c68f; --amber-fg:#e6c68f; --amber-soft:#e6c68f0b; --amber-line:#e6c68f36;
+  --rose:#e6a19a; --rose-fg:#edb1ab; --rose-soft:#e6a19a0b; --rose-line:#e6a19a36;
+
+  --user-bubble:#25272e; --composer:#303030; --panel:#1b1b1b;
+  --glow-1:transparent; --glow-2:transparent;
+  --header-bg:rgba(25, 25, 25, .82);
+  --shadow-1:none; --shadow-2:none; --shadow-3:0 24px 60px -20px rgba(0, 0, 0, .6);
+  --ring:0 0 0 2px var(--bg), 0 0 0 4px var(--fg-3);
+}
+:root[data-theme=light] {
+  --bg:#fff; --bg-deep:#f3f3f3; --surface:#fafafa;
+  --surface-2:#f0f0f0; --surface-3:#e8e8e8; --surface-hover:#e3e3e3;
+  --line:#eee; --line-2:#e1e1e1; --line-3:#bcbcbc;
+  --fg:#202020; --fg-2:#3e3e3e; --fg-3:#626262; --fg-4:#717171;
+
+  --gold:#484848; --gold-bright:#242424; --gold-ink:#fff;
+  --gold-soft:#00000005; --gold-line:#00000022; --gold-glow:transparent;
+  --link:#355989; --link-hover:#23436d;
+  --green:#287052; --green-soft:#2870520b; --green-line:#28705230;
+  --amber:#795311; --amber-fg:#795311; --amber-soft:#aa761209; --amber-line:#aa761230;
+  --rose:#a6473c; --rose-fg:#a6473c; --rose-soft:#a6473c08; --rose-line:#a6473c30;
+
+  --user-bubble:#eff0f3; --composer:#f3f3f3; --panel:#fafafa;
+  --glow-1:transparent; --glow-2:transparent;
+  --header-bg:rgba(255, 255, 255, .85);
+  --shadow-1:none; --shadow-2:none; --shadow-3:0 24px 60px -20px rgba(0, 0, 0, .25);
+}
+:root[data-theme=light] .raven svg { filter: none; }
+
+/* Primitives */
+button, a.button { box-shadow: none; transition: background 120ms, color 120ms, border-color 120ms; }
+button.primary, .primary, a.button.primary {
+  background: var(--fg); color: var(--bg); border: 1px solid var(--fg); font-weight: 600; box-shadow: none;
+}
+button.primary:hover:not(:disabled), a.button.primary:hover { background: var(--fg-2); border-color: var(--fg-2); filter: none; }
+button:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--fg-3); outline-offset: 3px; box-shadow: none; }
+
+/* Headings: sans, medium weight */
+h1, h2, h3, .card-heading h2, .conversation-empty h2, .companion h2, .profile-hero h2,
+.study-shell .chat h1, .study-shell .chat h2, .study-shell .chat h3 { font-family: var(--font-sans); font-weight: 600; }
+h1 em { font-style: normal; font-weight: 600; }
+.study-shell .main h1 { font-size: 28px; letter-spacing: -.02em; }
+.study-shell .conversation-title h1 { font-size: 18px; letter-spacing: -.015em; }
+.conversation-empty h2 { font-size: 22px; }
+.chat-avatar, .profile-card-heading strong, .profile-card strong, .profile-editor > h2,
+.draft h2, .draft h3, .evidence-rail h3, .delegation-result-heading h3, .collection-empty h2 {
+  font-family: var(--font-sans); font-weight: 600;
+}
+
+/* Shell */
+.study-shell .study-rail { background: var(--bg); }
+.study-shell .study-rail .rail-button.active { background: var(--surface-3); color: var(--fg); }
+.study-shell header { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--bg); }
+
+/* Conversation: soft bubbles, quiet composer */
+.study-shell .chat.user { background: var(--user-bubble); border: 0; border-radius: 16px; box-shadow: none; }
+.chat-avatar { background: var(--surface-2); border-color: transparent; color: var(--fg-2); }
+.study-shell .composer { background: var(--composer); border-color: transparent; border-radius: 22px; box-shadow: none; }
+.study-shell .composer:focus-within { background: var(--composer); border-color: var(--line-3); box-shadow: none; }
+.study-shell .composer .send-message { background: var(--fg); color: var(--bg); box-shadow: none; }
+.study-shell .composer .send-message:disabled { background: transparent; color: var(--fg-4); }

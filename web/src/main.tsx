@@ -44,6 +44,7 @@ import {MemoryNotebook} from './components/MemoryNotebook';
 
 import {MaintenancePage,type MaintenanceView} from './components/Maintenance';
 import type {MemorySelection} from './types';
+import './quiet-desk.css';
 
 const appIdFromLocation=()=>/^\/apps\/([a-f0-9]{32})\/?$/.exec(location.pathname)?.[1]||null;
 type NoteTarget={kind:'new'}|{kind:'open';path:string};
